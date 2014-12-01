@@ -5,8 +5,9 @@
 class freebsd_pkgng::update {
 
   exec { 'pkgng repository update':
-    refreshonly => true,
     command     => 'pkg update -q',
+    path        => [ '/usr/local/sbin', '/usr/sbin' ]
+    refreshonly => true,
   }
 
 }
