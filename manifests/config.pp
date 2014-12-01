@@ -19,7 +19,7 @@ class freebsd_pkgng::config {
     mode  => '0755',
   }
 
-  define freebsd_pkgng_repos ($path) {
+  define freebsd_pkgng_repos ($path, $url, $mirror_type, $signature_type, $fingerprints, $enabled) {
     file { "$path":
       ensure  => file,
       owner   => 'root',
