@@ -1,0 +1,20 @@
+# Managed Puppet.
+#
+
+<%= @name %>: {
+<% if defined? @url -%>
+  url: "<%= @url %>",
+<% end -%>
+<% if defined? @mirror_type -%>
+  mirror_type: "<%= @mirror_type %>",
+<% end -%>
+<% if defined? @signature_type -%>
+  signature_type: "<%= @signature_type %>",
+<% end -%>
+<% if defined? @fingerprints -%>
+  fingerprints: "<%= @fingerprints %>",
+<% end -%>
+<% if defined? @enabled -%>
+  enabled: <%= @enabled %>
+<% end -%>
+}
