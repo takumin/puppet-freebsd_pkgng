@@ -12,7 +12,7 @@ class freebsd_pkgng::config {
     content => template($::freebsd_pkgng::config_template),
   }
 
-  file { "$::freebsd_pkgng::REPOS_DIR":
+  file { $::freebsd_pkgng::REPOS_DIR:
     ensure => directory,
     owner => 'root',
     group => 'wheel',
