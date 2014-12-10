@@ -10,16 +10,7 @@ class freebsd_pkgng::params {
       $config_template      = 'freebsd_pkgng/pkg.conf.erb'
 
       # repository configuration
-      $repos                = {
-        'FreeBSD' => {
-          'path'           => '/etc/pkg/FreeBSD.conf',
-          'url'            => 'pkg+http://pkg.FreeBSD.org/${ABI}/latest',
-          'mirror_type'    => 'srv',
-          'signature_type' => 'fingerprints',
-          'fingerprints'   => '/usr/share/keys/pkg',
-          'enabled'        => 'yes',
-        },
-      }
+      $repos                = undef
       $repos_template      = 'freebsd_pkgng/repos.conf.erb'
 
       # pkg.conf options
