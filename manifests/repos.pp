@@ -1,5 +1,5 @@
 define freebsd_pkgng::repos ($url, $mirror_type, $signature_type, $fingerprints, $enabled) {
-  file { "/usr/local/etc/pkg/repos/$name":
+  file { "/usr/local/etc/pkg/repos/$name.conf":
     ensure  => file,
     owner   => 'root',
     group   => 'wheel',
