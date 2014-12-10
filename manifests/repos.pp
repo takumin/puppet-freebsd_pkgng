@@ -1,4 +1,10 @@
-define freebsd_pkgng::repos ($url, $mirror_type, $signature_type, $fingerprints, $enabled) {
+define freebsd_pkgng::repos (
+  $url = undef,
+  $mirror_type = undef,
+  $signature_type = undef,
+  $fingerprints = undef,
+  $enabled
+) {
   file { "/usr/local/etc/pkg/repos/$name.conf":
     ensure  => file,
     owner   => 'root',

@@ -53,5 +53,6 @@ class freebsd_pkgng (
 
   class { '::freebsd_pkgng::config': } ~>
   class { '::freebsd_pkgng::update': } ->
-  Class['::freebsd_pkgng']
+  Class['::freebsd_pkgng'] ~>
+  Stage['main']
 }
