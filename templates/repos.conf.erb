@@ -14,7 +14,9 @@
 <% if defined? @fingerprints -%>
   fingerprints: "<%= @fingerprints %>",
 <% end -%>
-<% if defined? @enabled -%>
-  enabled: <%= @enabled %>
+<% if @enabled -%>
+  enabled: yes
+<% else -%>
+  enabled: no
 <% end -%>
 }
