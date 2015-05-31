@@ -14,44 +14,44 @@ class freebsd_pkgng::params {
       $repos_template      = 'freebsd_pkgng/repos.conf.erb'
 
       # pkg.conf options
-      $ABI                  = undef
-      $ALIAS                = undef
-      $ASSUME_ALWAYS_YES    = undef
-      $CASE_SENSITIVE_MATCH = undef
-      $CUDF_SOLVER          = undef
-      $DEBUG_LEVEL          = undef
-      $DEBUG_SCRIPTS        = undef
-      $DEVELOPER_MODE       = undef
-      $EVENT_PIPE           = undef
-      $FETCH_RETRY          = undef
-      $FETCH_TIMEOUT        = undef
-      $HANDLE_RC_SCRIPTS    = undef
-      $INDEXDIR             = undef
-      $INDEXFILE            = undef
-      $IP_VERSION           = undef
-      $NAMESERVER           = undef
-      $PERMISSIVE           = undef
-      $PKG_CACHEDIR         = undef
-      $PKG_DBDIR            = undef
-      $PKG_ENABLE_PLUGINS   = undef
-      $PKG_ENV              = undef
-      $PKG_PLUGINS_DIR      = undef
-      $PKG_SSH_ARGS         = undef
-      $PLIST_KEYWORDS_DIR   = undef
-      $PLUGINS              = undef
-      $PLUGINS_CONF_DIR     = undef
-      $PORTSDIR             = undef
-      $REPOS_DIR            = [
+      $abi                  = undef
+      $alias                = undef
+      $assume_always_yes    = undef
+      $case_sensitive_match = undef
+      $cudf_solver          = undef
+      $debug_level          = undef
+      $debug_scripts        = undef
+      $developer_mode       = undef
+      $event_pipe           = undef
+      $fetch_retry          = undef
+      $fetch_timeout        = undef
+      $handle_rc_scripts    = undef
+      $indexdir             = undef
+      $indexfile            = undef
+      $ip_version           = undef
+      $nameserver           = undef
+      $permissive           = undef
+      $pkg_cachedir         = undef
+      $pkg_dbdir            = undef
+      $pkg_enable_plugins   = undef
+      $pkg_env              = undef
+      $pkg_plugins_dir      = undef
+      $pkg_ssh_args         = undef
+      $plist_keywords_dir   = undef
+      $plugins              = undef
+      $plugins_conf_dir     = undef
+      $portsdir             = undef
+      $repos_dir            = [
         '/etc/pkg',
         '/usr/local/etc/pkg/repos',
       ]
-      $REPO_AUTOUPDATE      = undef
-      $RUN_SCRIPTS          = undef
-      $SAT_SOLVER           = undef
-      $SSH_RESTRICT_DIR     = undef
-      $SYSLOG               = undef
-      $UNSET_TIMESTAMP      = undef
-      $VULNXML_SITE         = undef
+      $repo_autoupdate      = undef
+      $run_scripts          = undef
+      $sat_solver           = undef
+      $ssh_restrict_dir     = undef
+      $syslog               = undef
+      $unset_timestamp      = undef
+      $vulnxml_site         = undef
     }
 
     default: {
